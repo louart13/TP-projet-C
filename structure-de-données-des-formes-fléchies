@@ -22,7 +22,7 @@ typedef struct{
 typedef struct{
     verbesff * nbff;      //forme fléchie
     char[20]*  fbase;    // forme fléchie de base
-    char[4]*  code;     //code des verbes
+    char[4]*  code;     //code des verbes (IPre pour présent de l'indicatif par exemple)
 }noeuds_verbes;        // structure de données des noeuds pour les verbes;
 
 typedef struct{
