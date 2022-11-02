@@ -3,7 +3,7 @@
 
 typedef struct{
     int nbff;
-}verbsff;        // structure de données des formes fléchies des verbes;
+}verbesff;        // structure de données des formes fléchies des verbes;
 
 typedef struct{
     int nbff;
@@ -12,3 +12,32 @@ typedef struct{
 typedef struct{
     int nbff;
 }nomff;          // structure de données des formes fléchies des noms;
+
+// pas obligé car il y a une seule forme fléchie d'un adverbe car il est invariable
+typedef struct{
+    int nbff;
+}advff;          // structure de données des formes fléchies des adverbes;
+
+
+typedef struct{
+    verbesff * nbff;      //forme fléchie
+    char[20]*  fbase;    // forme fléchie de base
+    char[4]*  code;     //code des verbes
+}noeuds_verbes;        // structure de données des noeuds pour les verbes;
+
+typedef struct{
+    nomff * nbff;      //forme fléchie
+    char[20]*  fbase;    // forme fléchie de base
+}noeuds_noms;        // structure de données des noeuds pour les noms;
+
+typedef struct{
+    advff * nbff;      //forme fléchie
+    char[20]*  fbase;    // forme fléchie de base
+}noeuds_advs;        // structure de données des noeuds pour les adverbes;
+
+typedef struct{
+    adjectifff * nbff;      //forme fléchie
+    char[20]*  fbase;    // forme fléchie de base
+}noeuds_adjs;        // structure de données des noeuds pour les adverbes;
+
+
