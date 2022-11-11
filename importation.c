@@ -19,7 +19,8 @@ void fileImportation(){
     char base[MAX_LINE];
     char ind[MAX_LINE];
 
-
+    
+    //changer le parametre en fonction de l'emplacement du fichier
     if((fp = fopen("C:\\Users\\31799\\Desktop\\dic.txt","r")) == NULL){
 
         perror("Fail to read");
