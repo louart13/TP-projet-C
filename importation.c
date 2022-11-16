@@ -23,7 +23,7 @@ t_n_tree fileImportation(char target){
 
 
 
-    if((fp = fopen("C:\\Users\\31799\\Desktop\\dictionnaire_non_accentue.txt","r")) == NULL){
+    if((fp = fopen("C:\\Users\\31799\\Desktop\\dictionnaire.txt","r")) == NULL){
 
         perror("Fail to read");
         exit(1);
@@ -52,18 +52,43 @@ t_n_tree fileImportation(char target){
 
         }
 
-        if(ind[2] == target) {
+        if(ind[0] == target) {
 
-            for (int i = 0; i < MAX; i++) {
-                if (((tree.root)->son)[i] == NULL) {
-                    ((tree.root)->son)[i] = createBaseNode('\0');
-                    insertNode(((tree.root)->son)[i], ref, base, ind, 0);
-                    break;
-                } else if (base[0] == ((tree.root->son)[i])->cte) {
-                    insertNode(((tree.root)->son)[i], ref, base, ind, 0);
-                    break;
+            if(ind[2] == 'j'){
+                for (int i = 0; i < MAX; i++) {
+                    if (((tree.root)->son)[i] == NULL) {
+                        ((tree.root)->son)[i] = createBaseNode('\0');
+                        insertNode(((tree.root)->son)[i], ref, base, ind, 0);
+                        break;
+                    } else if (base[0] == ((tree.root->son)[i])->cte) {
+                        insertNode(((tree.root)->son)[i], ref, base, ind, 0);
+                        break;
+                    }
+                }
+            }else if(ind[2] == 'v'){
+                for (int i = 0; i < MAX; i++) {
+                    if (((tree.root)->son)[i] == NULL) {
+                        ((tree.root)->son)[i] = createBaseNode('\0');
+                        insertNode(((tree.root)->son)[i], ref, base, ind, 0);
+                        break;
+                    } else if (base[0] == ((tree.root->son)[i])->cte) {
+                        insertNode(((tree.root)->son)[i], ref, base, ind, 0);
+                        break;
+                    }
+                }
+            }else{
+                for (int i = 0; i < MAX; i++) {
+                    if (((tree.root)->son)[i] == NULL) {
+                        ((tree.root)->son)[i] = createBaseNode('\0');
+                        insertNode(((tree.root)->son)[i], ref, base, ind, 0);
+                        break;
+                    } else if (base[0] == ((tree.root->son)[i])->cte) {
+                        insertNode(((tree.root)->son)[i], ref, base, ind, 0);
+                        break;
+                    }
                 }
             }
+
         }
     }
     fclose(fp);

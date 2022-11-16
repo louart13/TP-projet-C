@@ -4,7 +4,6 @@
 #include <stdio.h>
 #define MAX 26
 #define IND_MAX 100
-#define SIZE 100
 #ifndef PROJETC_DICARBRE_H
 #define PROJETC_DICARBRE_H
 
