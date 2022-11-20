@@ -7,7 +7,7 @@
 
 p_node_base nodeFind (p_node_base base,int seed){
 
-    int s = rand() % 26;
+    int s = rand() % 26 +1;
 
     if(base->ref->amount != 0 && s != 0){
 

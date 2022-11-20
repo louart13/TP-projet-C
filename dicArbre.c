@@ -97,9 +97,21 @@ void insertNode(p_node_base pnb,char *ref,char *base,char *ind,int position){
             pnb->cte = base[position];
         }
 
-        (pnb->ref->inds)[pnb->ref->amount] = createIndNode(ind);
-        (pnb->ref->refs)[pnb->ref->amount] = createRefNode(ref);
-        pnb->ref->amount++;
+        if(pnb->ref->amount == 0){
+
+            (pnb->ref->inds)[pnb->ref->amount] = createIndNode("base");
+            (pnb->ref->refs)[pnb->ref->amount] = createRefNode(base);
+            pnb->ref->amount++;
+            (pnb->ref->inds)[pnb->ref->amount] = createIndNode(ind);
+            (pnb->ref->refs)[pnb->ref->amount] = createRefNode(ref);
+            pnb->ref->amount++;
+        }else{
+
+            (pnb->ref->inds)[pnb->ref->amount] = createIndNode(ind);
+            (pnb->ref->refs)[pnb->ref->amount] = createRefNode(ref);
+            pnb->ref->amount++;
+        }
+
         return;
     }
 

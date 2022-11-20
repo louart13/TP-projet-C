@@ -7,5 +7,5 @@
 #ifndef PROJETC_ADJFIND_H
 #define PROJETC_ADJFIND_H
 
-void adjFind(p_node_base,p_n_node,int);
+p_node_base adjFind(p_node_base,p_n_node,int);
 #endif //PROJETC_ADJFIND_H

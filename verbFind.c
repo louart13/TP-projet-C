@@ -7,13 +7,14 @@
 #include "nodeFind.h"
 
 
-void verbFind(p_node_base base,p_n_node nNode,int val1){
+p_node_base verbFind(p_node_base base,p_n_node nNode,int val1){
 
+    p_node_base n_base;
     while (val1 == 1){
 
-        p_node_base n_base = nodeFind(base,rand() % 26);
+        n_base = nodeFind(base,rand() % 26);
 
-        for (int i = rand() % (n_base->ref->amount); i < n_base->ref->amount; i++) {
+        for (int i = (rand() % ((n_base->ref->amount)-1))+1; i < n_base->ref->amount; i++) {
 
             if (strchr(((n_base->ref->inds)[i])->ind, (nNode->ind->ind)[strlen(nNode->ind->ind)-2])) {
                 if(strstr(((n_base->ref->inds)[i])->ind, "PPas")){
@@ -31,4 +32,5 @@ void verbFind(p_node_base base,p_n_node nNode,int val1){
         }
     }
 
+    return n_base;
 }
