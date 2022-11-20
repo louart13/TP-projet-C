@@ -11,8 +11,11 @@
 par exemple:
 
 Tapez 1 pour le modèle n°1 : nom – adjectif – verbe – nom
+
 Tapez 2 pour le modèle n°2 : nom – ‘qui’ – verbe – verbe – nom – adjectif
+
 Tapez 0 pour quitter
+
 Choisissez un modèle de phrase:
 
 (Valeur inserée) 1
