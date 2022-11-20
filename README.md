@@ -5,7 +5,7 @@ Lien Github: https://github.com/louart13/TP-projet-C.git
 
 * Mode d'emploi:
 
-1.Demarrer le programme via un IDE comme Clion ou un terminal(Pour le terminal, Il faut compliler d'abord pour avoir le fichier exécutable bin)
+1.Demarrer le programme via un IDE comme Clion ou un terminal
 
 2.Suivre les consignes pour avoir la phrase
 
