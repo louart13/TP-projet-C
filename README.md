@@ -18,7 +18,7 @@ Tapez 0 pour quitter
 
 Choisissez un modèle de phrase:
 
-(Valeur inserée) 1
+Valeur inserée: 1
 
 Résultat--> le schorre rhinopharyngien a fomentée l'hybridation
     (Base: schorre rhinopharyngien fomenter hybridation)
