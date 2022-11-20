@@ -1,4 +1,4 @@
-# Projet-TI301---Générateur-automatique-de-phrasesFichier
+# Projet-TI301---Générateur-automatique-de-phrases
 
 * Mode d'emploi:
 
