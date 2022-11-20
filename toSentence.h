@@ -10,5 +10,6 @@ typedef struct n_node{
 }t_n_node,*p_n_node;
 
 p_n_node initNode();
+//Trouver une forme réflechie aléatoirement pour un nom
 p_n_node toSentence1(p_node_base);
 #endif //PROJETC_TOSENTENCE_H

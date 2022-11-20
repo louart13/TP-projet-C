@@ -6,5 +6,6 @@
 #ifndef PROJETC_WORDFIND_H
 #define PROJETC_WORDFIND_H
 
+//chercher un noead qui contient les formes réflechies de manière aléatoire
 p_node_base nodeFind (p_node_base,int);
 #endif //PROJETC_WORDFIND_H

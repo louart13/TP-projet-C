@@ -15,13 +15,13 @@ p_n_node initNode(){
 
     return nNode;
 }
-
+//Trouver une forme réflechie aléatoirement pour un nom
 p_n_node toSentence1(p_node_base n_base1){
 
     p_n_node nNode = initNode();
 
-    int n_seed1 = (rand() % ((n_base1->ref->amount)-1))+1;
-    nNode->ref = (n_base1->ref->refs)[n_seed1];
+    int n_seed1 = (rand() % ((n_base1->ref->amount)-1))+1; //La facteur aléatoire qui correspond au nombre de forme réflechie
+    nNode->ref = (n_base1->ref->refs)[n_seed1]; //Trouver une forme réfléchie précise
     nNode->ind = (n_base1->ref->inds)[n_seed1];
 
     if(strstr(nNode->ind->ind,"Nom:Mas+SG")){

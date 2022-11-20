@@ -6,9 +6,9 @@
 #include <string.h>
 #include "importation.h"
 
-#define  MAX_LINE 1024
+#define  MAX_LINE 1024  // Taille pour le buffer qui stocke l'importation du dictionnaire
 
-
+//importation du dictionnaire et le rappel de la fonction pour créer l'arbre n-aire
 t_n_tree fileImportation(char target){
 
     //Buffer
@@ -16,14 +16,14 @@ t_n_tree fileImportation(char target){
     FILE *fp; // file pointer
 
 
-    const char *ref;
-    const char *base;
-    const char *ind;
+    const char *ref;  //stocker la forme réflechie
+    const char *base; //stocker le mot de base
+    const char *ind;  //stocker l'indicateur
     t_n_tree tree = createTree('\0');
 
 
-
-    if((fp = fopen("C:\\Users\\31799\\Desktop\\dictionnaire.txt","r")) == NULL){
+    //Ouverture du fichier
+    if((fp = fopen("C:\\Users\\31799\\Desktop\\dic.txt","r")) == NULL){
 
         perror("Fail to read");
         exit(1);
@@ -34,7 +34,7 @@ t_n_tree fileImportation(char target){
         int count = 3;
 
         memset(buf,0, sizeof (buf));
-        fgets(buf,sizeof(buf) - 1, fp);
+        fgets(buf,sizeof(buf) - 1, fp); //importer le dictionnaire dans le buffer ligne par ligne
         char *temp = strtok(buf,"\t");
 
         //separer les 3 mot qui sont dans une même ligne
@@ -51,7 +51,7 @@ t_n_tree fileImportation(char target){
             temp = strtok(NULL,"\t");
 
         }
-
+        // créer l'arbre n-aires par catégorie
         if(ind[0] == target) {
 
             if(ind[2] == 'j'){
