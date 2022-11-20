@@ -1,7 +1,7 @@
 # Projet-TI301---Générateur-automatique-de-phrases
 
 Lien Github: https://github.com/louart13/TP-projet-C.git
-
+-Les fichies des ressources sont dans l'autre branch
 
 * Mode d'emploi:
 
