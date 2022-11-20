@@ -2,7 +2,7 @@
 
 Lien Github: https://github.com/louart13/TP-projet-C.git
 
--Les fichies des ressources sont dans l'autre branch
+-Les fichiers des ressources sont dans l'autre branche
 
 * Mode d'emploi:
 
